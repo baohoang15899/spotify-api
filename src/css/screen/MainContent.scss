@@ -1,0 +1,23 @@
+.mainContent{
+    &.add{
+        display: flex;
+    }
+}
+
+.fakeHeader{
+    width: 17.5%;
+}
+
+.header{
+    background-color: $blackest-night;
+    z-index: 102;
+    width: 17.5%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.authContent{
+    width: 82.5%;
+}

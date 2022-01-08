@@ -1,0 +1,55 @@
+.subHeader{
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    margin: auto;
+    &__name{
+        @include font-bold(white,12px);
+        letter-spacing: 1.25px;
+        margin-left: 10px;
+    }
+    &__upgrade{
+        margin-right: 20px;
+        background-color: $blackest-night;
+        @include font-bold(white,14px);
+        letter-spacing: 1.25px;
+        padding: 7px 35px;
+        border-radius: 18px;
+        cursor: pointer;
+        border: 1px solid rgba(255,255,255,.7);
+        transition: all ease-in-out 0.1s;
+        @media(hover){
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+    &__info{
+        border-radius: 18px;
+        padding-right: 7px;
+        padding-top: 1px;
+        padding-bottom: 1px;
+        background-color: $blackest-night;
+        display: flex;
+        flex-basis: auto;
+        transition: background-color ease-in-out 0.2s;
+        align-items: center;
+        cursor: pointer;
+        @media (hover){
+            &:hover{
+                background-color: rgb(49, 49, 49);
+            }
+        }
+    }
+    &__avatar{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+    }
+}

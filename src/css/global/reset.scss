@@ -1,0 +1,88 @@
+*,
+::before,
+::after{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+img{
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+p{
+    word-break: normal;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: $black-color;
+    color: white;
+    &::-webkit-scrollbar {
+        width: 9px;
+      }
+      
+    
+    &::-webkit-scrollbar-track {
+        background: #cccccc;
+      }
+      
+    
+      &::-webkit-scrollbar-thumb {
+        background: rgb(116, 114, 114);
+      }
+      
+    
+      &::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      } 
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0);
+    // @media only screen and (max-width: 900px) {
+    //     cursor: pointer;
+    //   }
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+li{
+    list-style: none;
+}
+
+hr{
+    color: rgb(20, 20, 20);
+}
+.container{
+    padding-left: 60px;
+    padding-right: 60px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    cursor: pointer;
+}
+.wrapper{
+    max-width: 1920px;
+    margin: auto;
+    overflow: hidden;
+    background-color: $black-color;
+}
+
+@media screen and (max-width: 992px) {
+    .container{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+  }

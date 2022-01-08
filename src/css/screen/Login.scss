@@ -1,0 +1,48 @@
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #181818;
+    padding: 20px 30px;
+    width: 29vw;
+    border-radius: 8px;
+    margin: auto;
+    &__description{
+        @include font-semiBold(white,25px);
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    &__btn {
+        display: block;
+        @include font-regular(white,16px);
+        background-color: $green-color;
+        text-transform: uppercase;
+        border-radius: 16px;
+        cursor: pointer;
+        text-align: center;
+        padding: 7px 10px;
+        margin-bottom: 15px;
+        transition: background-color ease-in-out 0.2s;
+        @media (hover:hover){
+            &:hover{
+                background-color: $green-color-hover;
+            }
+        }
+    }
+    @include media(1200px){
+        width: 35vw;
+    }
+    @include media(900px){
+        width: 50vw;
+    }
+    @include media(600px){          
+        width: 55vw;
+    }
+    @include media(500px){          
+        width: 70vw;
+    }
+    @include media(450px){          
+        width: 85vw;
+    }
+}

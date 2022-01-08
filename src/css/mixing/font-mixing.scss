@@ -1,0 +1,37 @@
+@mixin font-regular($color:white,$size:14px) {
+    font-size: $size;
+    font-family: $font-style;
+    color: $color;
+    @if $color != white {
+        color: $color;
+    }
+    @if $size != 14px {
+        size: $size;
+    }
+}
+
+@mixin font-semiBold($color:white,$size:16px) {
+    font-size: $size;
+    font-family: $font-style;
+    color: $color;
+    font-weight: 600;
+    @if $color != white {
+        color: $color;
+    }
+    @if $size != 14px {
+        size: $size;
+    }
+}
+
+@mixin font-bold($color:white,$size:16px) {
+    font-size: $size;
+    font-family: $font-style;
+    color: $color;
+    font-weight: 700;
+    @if $color != white {
+        color: $color;
+    }
+    @if $size != 14px {
+        size: $size;
+    }
+}

@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+*,
+::before,
+::after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+p {
+  word-break: normal;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #232324;
+  color: white;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+body::-webkit-scrollbar {
+  width: 9px;
+}
+body::-webkit-scrollbar-track {
+  background: #cccccc;
+}
+body::-webkit-scrollbar-thumb {
+  background: #747272;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  color: #141414;
+}
+
+.container {
+  padding-left: 60px;
+  padding-right: 60px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1920px;
+  margin: auto;
+  overflow: hidden;
+  background-color: #232324;
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #181818;
+  padding: 20px 30px;
+  width: 29vw;
+  border-radius: 8px;
+  margin: auto;
+}
+.login__description {
+  font-size: 25px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 600;
+  size: 25px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.login__btn {
+  display: block;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  size: 16px;
+  background-color: #1db954;
+  text-transform: uppercase;
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: center;
+  padding: 7px 10px;
+  margin-bottom: 15px;
+  transition: background-color ease-in-out 0.2s;
+}
+@media (hover: hover) {
+  .login__btn:hover {
+    background-color: #15883e;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .login {
+    width: 35vw;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .login {
+    width: 50vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .login {
+    width: 55vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .login {
+    width: 70vw;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .login {
+    width: 85vw;
+  }
+}
+
+.mainContent.add {
+  display: flex;
+}
+
+.fakeHeader {
+  width: 17.5%;
+}
+
+.header {
+  background-color: #000;
+  z-index: 102;
+  width: 17.5%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.authContent {
+  width: 82.5%;
+}
+
+.loading {
+  width: 100vw;
+  height: 100vh;
+  background-color: #232324;
+}
+
+.subHeader {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+  margin: auto;
+}
+.subHeader__name {
+  font-size: 12px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 700;
+  size: 12px;
+  letter-spacing: 1.25px;
+  margin-left: 10px;
+}
+.subHeader__upgrade {
+  margin-right: 20px;
+  background-color: #000;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1.25px;
+  padding: 7px 35px;
+  border-radius: 18px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: all ease-in-out 0.1s;
+}
+@media (hover) {
+  .subHeader__upgrade:hover {
+    transform: scale(1.1);
+  }
+}
+.subHeader__info {
+  border-radius: 18px;
+  padding-right: 7px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  background-color: #000;
+  display: flex;
+  flex-basis: auto;
+  transition: background-color ease-in-out 0.2s;
+  align-items: center;
+  cursor: pointer;
+}
+@media (hover) {
+  .subHeader__info:hover {
+    background-color: #313131;
+  }
+}
+.subHeader__avatar {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=main.css.map */
