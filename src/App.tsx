@@ -45,6 +45,7 @@ export default function App() {
         if (user.status) {
             navigate(state?.location?.pathname ? state.location.pathname : '/home')
         }
+        console.log(user.status);
     }, [user.status])
 
 

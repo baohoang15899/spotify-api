@@ -1,0 +1,6 @@
+.home{
+    @include paddingTop;
+    &__title{
+        @include font-bold(white,25px)
+    }
+}

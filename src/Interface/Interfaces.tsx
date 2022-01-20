@@ -4,6 +4,36 @@ export interface ItokenData {
     token_type: string
 }
 
+
+
+export interface ItopArtistsItems {
+    external_urls: IexternalUrls
+    followers: Ifollower
+    genres: Array<String>,
+    href: String,
+    id: String,
+    images: Iimages[],
+    name: String,
+    popularity: Number,
+    type: String,
+    uri: String,
+}
+
+export interface IcontentBlock{
+    title:String,
+    data:any,
+    type:String
+}
+export interface ItopArtists {
+    href: string,
+    items: ItopArtistsItems[],
+    limit: Number,
+    next: any
+    offset: Number
+    previous: any
+    total: number
+}
+
 interface Ifollower {
     href: string,
     total: number

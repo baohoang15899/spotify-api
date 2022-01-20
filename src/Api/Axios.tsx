@@ -6,7 +6,7 @@ import { Url } from "./Urls";
 
 const processRequest = async (url: any) => {
     try {
-        const data:Iresponse = await url
+        const data: Iresponse = await url
         return data
     } catch (error) {
         console.log(error);
@@ -15,4 +15,8 @@ const processRequest = async (url: any) => {
 
 export const getMe = async () => {
     return processRequest(NAxios.get(`${Url.GET_ME}`))
+}
+
+export const getMeTopArtists = () => {
+    return processRequest(NAxios.get(`${Url.GET_ME}${Url.ME_TOP}`))
 }
